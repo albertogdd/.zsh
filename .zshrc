@@ -31,7 +31,7 @@ export PATH=$PATH:/home/local_albertogildedios/go/bin
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 
 ### PLUGINS
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.zsh/common-aliases.plugin.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
