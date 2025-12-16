@@ -35,3 +35,4 @@ source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.zsh/common-aliases.plugin.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/git.plugin.zsh
