@@ -4,4 +4,4 @@ apt install bat -y
 apt install curl -y
 apt install git -y
 
-echo ZDOTDIR=~/.zsh > ~/.zshenv
+echo "ZDOTDIR=~/.zsh" > ~/.zshenv
