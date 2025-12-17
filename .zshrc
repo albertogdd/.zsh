@@ -1,8 +1,9 @@
 ### ZSH THEME
 ZSH_THEME="powerlevel10k/powerlevel10k"
-[[ ! -f ~/.zsh/.p10k.zsh ]] || source ~/.zsh/.p10k.zsh
+[[ ! -f ~/.zsh/theme/.p10k.zsh ]] || source ~/.zsh/theme/.p10k.zsh
+source ~/.zsh/theme/powerlevel10k/powerlevel10k.zsh-theme
 
-### HISTORY AND FZF
+### HISTORY
 HISTSIZE=10000000
 SAVEHIST=10000000
 
@@ -11,13 +12,13 @@ setopt HIST_IGNORE_ALL_DUPS      # Delete old recorded entry if new entry is a d
 
 export HISTFILE="$HOME/.zsh/.history"
 
-if [[ ! "$PATH" == */home/local_albertogildedios/.zsh/fzf/bin* ]]; then
-  PATH="${PATH:+${PATH}:}/home/local_albertogildedios/.zsh/fzf/bin"
+### FZF
+if [[ ! "$PATH" == */home/local_albertogildedios/.zsh/plugin/fzf/bin* ]]; then
+  PATH="${PATH:+${PATH}:}/home/local_albertogildedios/.zsh/plugin/fzf/bin"
 fi
-
 source <(fzf --zsh)
 
-### aliases
+### ALIASES
 alias ..="cd .."
 alias k="kubectl"
 alias python=python3
@@ -31,8 +32,7 @@ export PATH=$PATH:/home/local_albertogildedios/go/bin
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 
 ### PLUGINS
-source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
-source ~/.zsh/common-aliases.plugin.zsh
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh/git.plugin.zsh
+source ~/.zsh/plugin/common-aliases.plugin.zsh
+source ~/.zsh/plugin/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/plugin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/plugin/git.plugin.zsh
