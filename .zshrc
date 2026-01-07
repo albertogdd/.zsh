@@ -30,6 +30,7 @@ alias bat="batcat"
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/local_albertogildedios/go/bin
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
+export PATH=$PATH:/home/local_albertogildedios/.local/bin
 
 ### PLUGINS
 source ~/.zsh/plugin/common-aliases.plugin.zsh
