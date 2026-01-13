@@ -32,6 +32,9 @@ export PATH=$PATH:/home/local_albertogildedios/go/bin
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 export PATH=$PATH:/home/local_albertogildedios/.local/bin
 
+### KUBECONFIG
+export KUBECONFIG=~/.kube/config:~/.kube/config-kind 
+
 ### PLUGINS
 source ~/.zsh/plugin/common-aliases.plugin.zsh
 source ~/.zsh/plugin/zsh-autosuggestions/zsh-autosuggestions.zsh
