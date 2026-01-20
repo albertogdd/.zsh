@@ -10,11 +10,11 @@ SAVEHIST=10000000
 setopt HIST_IGNORE_DUPS          # Don't record an entry that was just recorded again.
 setopt HIST_IGNORE_ALL_DUPS      # Delete old recorded entry if new entry is a duplicate.
 
-export HISTFILE="~/.zsh/.history"
+export HISTFILE="$HOME/.zsh/.history"
 
 ### FZF
-if [[ "$PATH" != *"~/.zsh/plugin/fzf/bin"* ]]; then
-  PATH="${PATH:+${PATH}:}~/.zsh/plugin/fzf/bin"
+if [[ "$PATH" != *"$HOME/.zsh/plugin/fzf/bin"* ]]; then
+  PATH="${PATH:+${PATH}:}$HOME/.zsh/plugin/fzf/bin"
 fi
 source <(fzf --zsh)
 
@@ -28,9 +28,9 @@ alias bat="batcat"
 
 ### PATH
 export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:~/go/bin
+export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
-export PATH=$PATH:~/.local/bin
+export PATH=$PATH:$HOME/.local/bin
 
 ### KUBECONFIG
 export KUBECONFIG=~/.kube/config:~/.kube/config-kind 
