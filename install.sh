@@ -4,4 +4,6 @@ apt install bat -y
 apt install curl -y
 apt install git -y
 
+plugin/fzf/install --bin
+
 echo "ZDOTDIR=~/.zsh" > ~/.zshenv
