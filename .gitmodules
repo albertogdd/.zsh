@@ -1,0 +1,15 @@
+[submodule "theme/powerlevel10k"]
+	path = theme/powerlevel10k
+	url = git@github.com:romkatv/powerlevel10k.git
+[submodule "theme/rose-pine"]
+	path = theme/rose-pine
+	url = git@github.com:rose-pine/gnome-terminal.git
+[submodule "plugin/zsh-syntax-highlighting"]
+	path = plugin/zsh-syntax-highlighting
+	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
+[submodule "plugin/zsh-autosuggestions"]
+	path = plugin/zsh-autosuggestions
+	url = git@github.com:zsh-users/zsh-autosuggestions.git
+[submodule "plugin/fzf"]
+	path = plugin/fzf
+	url = git@github.com:junegunn/fzf.git
