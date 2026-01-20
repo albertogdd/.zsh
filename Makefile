@@ -26,3 +26,9 @@ upgrade:
 	@echo "Upgrading zsh submodules..."
 	@./script/upgrade.sh
 	@echo "Zsh submodules upgraded!"
+
+## Copy shell history file to zsh configuration directory
+copy-history:
+	@echo "Copying shell history to ~/.zsh/history..."
+	@cp ~/.history ~/.zsh/.history
+	@echo "Zsh history copied!"

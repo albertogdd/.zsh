@@ -17,3 +17,4 @@ sudo make install
 
 > [!IMPORTANT]  
 > .history file should be copied manually to the root of this project
+> Check make copy-history command
