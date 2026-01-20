@@ -16,5 +16,5 @@ sudo make install
 ```
 
 > [!IMPORTANT]  
-> .history file should be copied manually to the root of this project
-> Check make copy-history command
+> Shell history file (usually `~/.history`) should be copied to the root of this project
+> Check the command `make copy-history`
