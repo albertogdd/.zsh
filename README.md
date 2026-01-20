@@ -14,3 +14,6 @@ $$\ $$$$$$$$\ $$$$$$$  |$$ |  $$ |
 ```sh
 sudo make install
 ```
+
+> [!IMPORTANT]  
+> .history file should be copied manually to the root of this project
