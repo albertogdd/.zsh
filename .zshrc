@@ -10,11 +10,11 @@ SAVEHIST=10000000
 setopt HIST_IGNORE_DUPS          # Don't record an entry that was just recorded again.
 setopt HIST_IGNORE_ALL_DUPS      # Delete old recorded entry if new entry is a duplicate.
 
-export HISTFILE="$HOME/.zsh/.history"
+export HISTFILE="~/.zsh/.history"
 
 ### FZF
-if [[ ! "$PATH" == */home/local_albertogildedios/.zsh/plugin/fzf/bin* ]]; then
-  PATH="${PATH:+${PATH}:}/home/local_albertogildedios/.zsh/plugin/fzf/bin"
+if [[ "$PATH" != *"~/.zsh/plugin/fzf/bin"* ]]; then
+  PATH="${PATH:+${PATH}:}~/.zsh/plugin/fzf/bin"
 fi
 source <(fzf --zsh)
 
@@ -22,15 +22,15 @@ source <(fzf --zsh)
 alias ..="cd .."
 alias k="kubectl"
 alias python=python3
-alias vpnon="globalprotect connect -p vpn.dynatrace.com -u alberto.gildedios@dynatrace.com"
+alias vpnon="globalprotect connect -p vpn.dynatrace.com -u \"$VPN_USER\""
 alias vpnoff="globalprotect disconnect"
 alias bat="batcat"
 
 ### PATH
 export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:/home/local_albertogildedios/go/bin
+export PATH=$PATH:~/go/bin
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
-export PATH=$PATH:/home/local_albertogildedios/.local/bin
+export PATH=$PATH:~/.local/bin
 
 ### KUBECONFIG
 export KUBECONFIG=~/.kube/config:~/.kube/config-kind 
