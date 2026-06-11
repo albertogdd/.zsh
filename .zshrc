@@ -31,6 +31,8 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.rd/bin
+export PATH=$PATH:$HOME/.claude/skills/utils/dt-acli-pii-sanitize
 
 ### KUBECONFIG
 export KUBECONFIG=~/.kube/config:~/.kube/config-kind 
@@ -40,3 +42,4 @@ source ~/.zsh/plugin/common-aliases.plugin.zsh
 source ~/.zsh/plugin/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/plugin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/plugin/git.plugin.zsh
+source ~/.zsh/.tokens
